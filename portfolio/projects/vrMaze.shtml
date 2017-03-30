@@ -25,7 +25,7 @@
 	<h1>VR Maze Game</h1>
 	<div class="aboutImg"><img src="../media/vrMaze.png" alt="Inside the VR Maze" /></div>
 		<div class="aboutText">
-		<p>This is a personal project that myself and a group are working on to bring to market. We are adapting a board game we designed for the VR space. I am mainly responsible for the Maze Generation and some gameplay programming. This can be found on my GitHub page.</p>
+		<p>This is a personal project that myself and a group are working on to bring to market. We are adapting a board game we designed for the VR space. I am mainly responsible for the Maze Generation and some gameplay programming. This is an indevelopment project with publishers and as such code is not available.</p>
 		</div>
 		
 		<div style="clear:both;"></div>
