@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Portfolio of Matt Dieselman - Game Graphics Direct-X Engine</title>
+	<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="../JavaScript/particles.js"></script>
+<script src="../JavaScript/app.js"></script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include virtual="../includes/nav2.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("1").className="current";
+	};
+	</script>
+	<h1>Custom Engine using Direct-X</h1>
+	<div class="aboutImg"><img src="../media/ggp.png" alt="Direct X Engine" /></div>
+		<div class="aboutText">
+		<p>This is a group project worked on for my Game Graphics Programming class. This engine utilizes Direct-X. We are working to create a recreation of the game "Jet Pack Joy Ride" in our engine focusing on implimenting different graphics elements. Find the source code over on my GitHub.</p>
+		</div>
+		
+		<div style="clear:both;"></div>
+
+	<footer>
+		<!--#include virtual="../includes/footer.html"-->
+	</footer>
+</div>	
+
+
+</body>
+</html>

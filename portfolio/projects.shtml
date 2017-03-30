@@ -95,6 +95,7 @@
 					<div class="projectImage" style="cursor:pointer; background-image:url('media/openGL.png');"></div>
 					<div class="projectImage" style="cursor:pointer; background-image:url('media/vrMaze.png');"></div>
 					<div class="projectImage" style="cursor:pointer; background-image:url('media/fl.png');"></div>
+					<div class="projectImage" style="cursor:pointer; background-image:url('media/ggp.png');"></div>
 
 				</div>
 			</div>

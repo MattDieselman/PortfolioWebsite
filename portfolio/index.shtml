@@ -31,11 +31,14 @@
 	};
 	</script>
 		<p id="phone">The carousel is not available on screens smaller than 800px.</p>
-		<h2 style="margin-left:2%;">I'm Matt and I make video games, mods, simulations and much more.</h2>
+		<h2 style="margin-left:2%;">I'm Matt Dieselman. I am a student at Rochester Institute of Technology studying Game Design and Development.</h2>
 		<!--Carousel Section-->
+		<p>I am primarily a programmer, focussing on game-play programming or engine programming, however I am able to adapt to any demands. Check out my projects below, or my skills and experience on the experience page. Feel free to contact me through email with questions or opportunities</p>
+		<p>Check back here often as I am constantly working on new projects and updating old ones.</p>
 		<div  id="carousel">
 			<div class="carousel" style="text-align:center;">
 				<ul class="carousel noSelect">
+
 					<li class="item active"><a href="projects/hvz.shtml"><img style="height:250px; width:350px;" src="media/hvz.png" alt="My Humans vs Zombies Project" /></a></li>
 					<li class="item"><a href="projects/crossbow.shtml"><img style="height:250px; width:350px;" src="media/crossbow.gif" alt="My Crossbow Model" /></a></li>
 					<li class="item"><a href="projects/floorIsLava.shtml"><img style="height:250px; width:350px;" src="media/fl.png" alt="The Floor is Lava" /></a></li>
@@ -43,6 +46,7 @@
 					<!--<li class="item"><a href="projects/battleship.shtml"><img style="height:250px; width:350px;" src="media/battleship.png" alt="My Battleship Project" /></a></li>-->
 					<li class="item"><a href="projects/openGL.shtml"><img style="height:250px; width:350px;" src="media/openGL.png" alt="openGL Engine" /></a></li>
 					<li class="item"><a href="projects/vrMaze.shtml"><img style="height:250px; width:350px;" src="media/vrMaze.png" alt="Inside the VR Maze" /></a></li>
+					<li class="item"><a href="projects/gameGraphics.shtml"><img style="height:250px; width:350px;" src="media/ggp.gif" alt="Direct X Engine" /></a></li>
 
 <!-- 					<li class="item"></li>
  -->
@@ -54,6 +58,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div>
+		<br />
 		</div>
 		<div style="clear:both;"></div>
 
