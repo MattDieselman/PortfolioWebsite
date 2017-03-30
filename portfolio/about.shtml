@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Matt Dieselman</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="JavaScript/particles.js"></script>
+<script src="JavaScript/app.js"></script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include file="includes/nav.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("3").className="current";
+	};
+	</script>
+		<h1>About Me</h1>
+		<div class="about">
+		<div class="aboutImg"><img src="media/selfPic_.jpg" alt="Headshot" /></div>
+		<div class="aboutText">
+			<p>I am a current student at Rochester Institute of Technology studying Game Design and Development. I am interested in all elements of creating a game, but above all I enjoy gameplay programming.</p>
+			<a href="media/Resume.pdf">Resume</a>
+		</div>
+			
+		</div>
+		<div style="clear:both;"></div>
+	<footer>
+		<!--#include virtual="includes/footer.html"-->
+	</footer>
+</div>	
+
+
+</body>
+</html>

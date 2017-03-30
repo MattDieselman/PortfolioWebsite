@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Portfolio of Matt Dieselman - 3D CrossBow</title>
+	<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="../JavaScript/particles.js"></script>
+<script src="../JavaScript/app.js"></script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include virtual="../includes/nav2.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("1").className="current";
+	};
+	</script>
+	<h1>3D CrossBow</h1>
+	<p>A 3D CrossBow created in as a school project. The model is fully skinned with working UVs and an animation. I do not own any textures used on the model.</p>
+	<div style="margin-left:auto;margin-right:auto;text-align:center;">
+		<p id="phone">The preview is not available on screens smaller than 800px.</p>
+		<iframe width="640" height="480" src="https://sketchfab.com/models/013ec36e51334c219893c4d2767ef7fb/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+			<a href="https://sketchfab.com/models/013ec36e51334c219893c4d2767ef7fb?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Cross Bow</a>
+			by <a href="https://sketchfab.com/Aloys1320?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">aloys1320</a>
+			on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+		</p>
+	</div>
+	<footer>
+		<!--#include virtual="../includes/footer.html"-->
+	</footer>
+</div>	
+
+
+</body>
+</html>

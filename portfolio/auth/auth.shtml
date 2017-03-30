@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Auth Page For The Portfolio of Matt Dieselman</title>
+	<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="particles-js" style="position:absolute; width:100%;height:100%; z-index:-10;"></div>
+<script src="JavaScript/particles.js"></script>
+<script src="JavaScript/app.js"></script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include virtual="../includes/nav2.html"-->
+
+	<div style="margin-left:auto;margin-right:auto;text-align:center; height:100%;width:100%; display:absolute;">
+		<img src="../media/how.jpg" alt="how" title="how" />
+		<h1>Auth Page</h1>
+	</div>
+		
+	<footer>
+		<!--#include virtual="../includes/footer.html"-->
+	</footer>
+</div>	
+
+</body>
+</html>

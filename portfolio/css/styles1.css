@@ -1,0 +1,276 @@
+body{
+	background-color:#1F3F89;
+	color:white;
+	font-size:115%;
+	overflow:auto;
+	font-family:"Trebuchet MS";
+}
+nav{
+	display:block;
+	/*background-color:rgba(0,0,0,0.3);	*/
+	z-index:999999999;
+}
+#particles-js{
+	filter:blur(1px);
+	position:absolute;
+	width:100%;
+	height:99%;
+	z-index:-10;
+	margin:0;
+	padding:0;
+	left:0;
+	top:0;
+	overflow:hidden;
+}
+#carousel{
+	height:250px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+/*.noSelect{
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none;  
+	-khtml-user-select: none;   
+	-moz-user-select: none;     
+	-ms-user-select: none;      
+	user-select: none;
+}*/
+img{
+height:auto;
+width:100%;
+}
+#floatSection{
+	background-color:rgba(0,0,0,0.4);
+	margin:2% 5% 2% 5%;
+	padding:2%;
+	box-shadow:10px 10px 5px #101010;
+/* 	overflow:auto;
+ */}
+
+#logo a{
+	font-family: 'Droid Sans', sans-serif;
+	font-size:300%;
+	text-decoration:none;
+	color:white;
+}
+#logo a:visited{
+	color:white;
+}
+#logo #current a{
+	text-decoration:underline;
+}
+#navSection{
+	background-color:rgba(0,0,0,0.5);	
+	padding:2px 10px 2px 10px;
+	z-index:9999999999999999999999;
+	color:white;
+}
+#navSection li{
+	list-style-type:none;
+	display:inline-block;
+	padding:10px;
+	color:white;
+	position: relative;
+
+}
+ul#navSection li ul {
+	z-index:999999999;
+
+	display:none;
+	left:-50px;
+}
+ul#navSection li ul li{
+	list-style-type:none;
+	/*left:-100%;
+	margin:-100;*/
+	position:absolute;
+	z-index:999999999;
+
+}
+#navSection li a{
+	text-decoration:none;
+	color:white;
+	padding:10px;
+}
+.current{
+	text-decoration:underline;
+}
+
+#navSection .current a{
+	color:#ffffff ;
+}
+#navSection .current ul li a{
+	color:#111111 ;
+}
+#navSection .parentNav ul li a{
+	color:black;
+	
+}
+#navSection .parentNav li:hover>a{
+	color:white;
+	
+}
+#navSection li:hover{
+	background-color:black;
+
+}
+#navSection li:hover>a{
+color:white;
+}
+#navSection li:hover>ul{
+	width:100%;
+	position:absolute;
+	display:inline-block;
+	left:0;
+	top:100%;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#navSection li:hover>ul li{
+	position:relative;
+	width:150%;
+ }
+.about{
+
+}
+.aboutText{
+
+	display:block;
+	overflow:hidden;
+}
+.aboutImg{
+	float:right;
+	width:auto;
+	max-width:50%;
+	max-height:400px;
+	
+}
+.headList{
+	font-weight:bold;
+	font-size:110%;
+}
+.headList a{
+	color:black;
+	text-decoration:none;
+}
+.headList a:visited{
+	color:black;
+}
+footer{
+	text-align:center;
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+}
+img{
+	max-height:400px;
+	max-width:400px;
+}
+#phone{
+	display:none;
+}
+#exp{
+
+}
+#exp a{
+	display:block;
+	margin-bottom:10px;
+	margin-top:10px;
+	text-decoration:none;
+	color:black;
+}
+#classExp a{
+	
+}
+.selected{
+	font-style:italic;
+	text-decoration:underline;
+}
+a:link{
+	color:#1F3F89;
+}
+a:visited{
+	color:#7282a7;
+}
+
+#emailFormSection{
+	display:table;
+}
+.coll{
+	display:table-row;
+}
+.cell{
+	display:table-cell;
+}
+
+div .projects{
+	display:table;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	border-spacing:20px 10px;
+	}
+div .projectImage{
+	display:table-cell;
+	height:200px;
+	width:250px;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:100%;
+	text-align:center;
+	border:5px solid #617196;
+
+}
+
+
+/*RESPONSIVE DESIGN SECTION*/
+@media screen and (max-width: 800px){
+	iframe{
+		display:none;
+	}
+	#phone{
+		display:inline;
+	}
+}
+@media screen and (max-width: 600px){
+	#carousel{
+		display:none;
+	}
+	#navSection{
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		background-color:#eeeeee;
+	}
+	#navSection li{
+		margin:15px auto 15px auto;
+		padding-top:25px;
+		padding-bottom:25px;
+		font-size:110%;
+		display:block;
+	}
+	/*#navSection li:not(.current){
+		display:none;
+	}*/
+
+	.aboutImg{		
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		float:none;
+	}
+	#navSection li:hover{
+	background-color:black;
+
+}
+
+#navSection li:hover>ul{
+	display:none;
+}
+#navSection li:hover>ul li{
+ }
+}

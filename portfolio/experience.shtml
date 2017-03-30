@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Experience</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="media/font-awesome/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#classButton").on("click",function(e){
+				$("#languageExp").slideUp();
+				$("#classExp").slideDown();
+				$("#languageButton").removeClass("selected");
+				$("#classButton").addClass("selected");
+				$("#classButArrow").removeClass("fa fa-angle-right").addClass("fa fa-angle-down");
+				$("#langButArrow").removeClass("fa fa-angle-down").addClass("fa fa-angle-right");
+
+			});
+			$("#languageButton").on("click",function(e){
+				$("#classExp").slideUp();
+				$("#languageExp").slideDown();
+				$("#classButton").removeClass("selected");
+				$("#languageButton").addClass("selected");		
+				$("#langButArrow").removeClass("fa fa-angle-right").addClass("fa fa-angle-down");
+				$("#classButArrow").removeClass("fa fa-angle-down").addClass("fa fa-angle-right");				
+			});
+		});
+</script>
+</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="JavaScript/particles.js"></script>
+<script src="JavaScript/app.js"></script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include file="includes/nav.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("2").className="current";
+	};
+	</script>
+	<!--Class Content-->
+	<div id="exp">
+		<a id="classButton" class="selected" href="#"><h1> Classes <i id="classButArrow" class="fa fa-angle-down" aria-hidden="true"></i></h1></a>
+		<div id="classExp">
+			<h3>Relevent Class Experience</h3>
+			<ul>
+				<li>Game Dev and Algebra Problem Solving 1 & 2</li>
+				<li>Data Structures and Algorithms 1&2</li>
+				<li>2D & 3D Asset Production</li>
+				<li>Web Design and Development</li>
+				<li>Game Graphics Programming</li>
+				<li>Game Design and Development 1&2</li>
+				<li>AI Programming for Games</li>
+			</ul>
+		</div>
+		<a id="languageButton" href="#"><h1> Languages & Tools <i id="langButArrow" class="fa fa-angle-right" aria-hidden="true"></i></h1></a>
+		<div id="languageExp" style="display:none;">
+			<h3>Known Computer Languages</h3>
+			<ul>
+				<li>Java (3+ years Experience)</li>
+				<li>C# (2+ years Experience)</li>
+				<li>C++ (2+ years Experience)</li>
+				<li>HTML (2+ years Experience)</li>
+				<li>JavaScript (1+ years Experience)</li>
+			</ul>
+			<h3>Known Tools</h3>
+			<ul>
+				<li>Maya (6 months Experience)</li>
+				<li>Unity (1+ years Experience)</li>
+				<li>Unreal Engine 4 (1+ years Experience)</li>
+				<li>Unity (1+ years Experience)</li>
+				<li>Photoshop (1+ years Experience)</li>
+			</ul>
+		</div>
+	</div>
+	
+	<footer>
+		<!--#include virtual="includes/footer.html"-->
+	</footer>
+</div>	
+
+</body>
+</html>

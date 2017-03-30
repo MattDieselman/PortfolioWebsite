@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Contact Me</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="JavaScript/particles.js"></script>
+<script src="JavaScript/app.js"></script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include file="includes/nav.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("4").className="current";
+	};
+	</script>
+	<h1>Contact Me</h1>
+	
+	<h2>Email Infromation</h2>
+		<ul>
+			<li>School E-mail Address (rit edu): mxd2278</li>
+			<li>Personal E-mail Address (G-Mail): mattdieselman</li>
+		</ul>
+	<!--<h2>Email Me</h2>
+	<div id="emailFormSection">
+		<form method="post" action="media/Mailer/formmail.php" name="Email Me">
+		<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+		<input type="hidden" name="recipients" value="mxd2278@rit.edu" />
+		<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+	   
+		<input type="hidden" name="subject" value="Sample FormMail Testing" />
+
+		<div class="row"> <div class="cell">Your Name: </div>			<div class="cell"><input type="text" name="FullName" /></div> </div>
+		<div class="row"><div class="cell">Your Email: </div>	   		<div class="cell"><input type="text" name="EmailAddr" /> </div></div>
+		<div class="row"><div class="cell">Your Message: </div>			<div class="cell"><textarea name="mesg" rows="10" cols="50"></textarea></div></div>
+		<input type="submit" value="Submit" />
+		</form>
+	</div>-->
+	<h2>Social Media Information</h2>
+		<ul>
+			<li><a href="https://github.com/MattDieselman" style="display:inline;">Github</a> Take a look at my github. All of my projects are on here and you can feel free to download any of them.</li>
+			<li><a href="https://www.linkedin.com/in/mattdieselman">LinkedIn</a> Come look at my LinkedIn. It has more info on my experiences and skills.</li>
+		</ul>
+	<footer>
+		<!--#include virtual="includes/footer.html"-->
+	</footer>
+</div>	
+
+
+</body>
+</html>

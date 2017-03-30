@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Portfolio of Matt Dieselman - Projects</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="media/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="JavaScript/particles.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="JavaScript/app.js">
+</script>
+<script>
+	$(document).ready(function(){
+
+			$("#progBut").on("click",function(e){
+				$("#assetProjects").hide();
+				$("#progProjects").fadeIn();
+				$("#assetBut").removeClass("selected");
+				$("#progBut").addClass("selected");
+				$("#assetButArrow").removeClass("fa fa-angle-right").addClass("fa fa-angle-down");
+				$("#progButArrow").removeClass("fa fa-angle-down").addClass("fa fa-angle-right");
+
+			});
+			$("#assetBut").on("click",function(e){
+				$("#progProjects").hide();
+				$("#assetProjects").fadeIn();
+				$("#progBut").removeClass("selected");
+				$("#assetBut").addClass("selected");		
+				$("#progButArrow").removeClass("fa fa-angle-right").addClass("fa fa-angle-down");
+				$("#assetButArrow").removeClass("fa fa-angle-down").addClass("fa fa-angle-right");				
+			});	
+		$(".projectImage").on("click",function(){
+			console.log('clicked');
+			var lightbox=document.createElement("div");
+			lightbox.style.position="fixed";
+			lightbox.style.height="100%";
+			lightbox.style.width="100%";
+			lightbox.style.left=0;
+			lightbox.style.top=0;
+			lightbox.style.backgroundColor="rgba(0,0,0,0.7)";
+			lightbox.style.display="none";
+			var myImgSrc=$(this).css('background-image').replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '');
+			var myImg = document.createElement("img");
+			myImg.src=myImgSrc;
+			myImg.onload = function(){
+				myImg.style.position="absolute";
+				console.log(myImg.width);
+				var diffWidth = $(window).width()/2-myImg.width/2;
+				var diffHeight = $(window).height()/2-myImg.height/2;
+				myImg.style.left=diffWidth+"px";
+				myImg.style.top=diffHeight+"px";
+				lightbox.appendChild(myImg);
+				document.body.appendChild(lightbox);
+				$(lightbox).fadeIn(200);
+			};
+			
+			lightbox.addEventListener("click",function(e){
+				$(lightbox).fadeOut(200,function(){
+					lightbox.remove();
+				});
+			});
+		});
+	});
+	
+	function expand(e){
+	
+	}
+</script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include file="includes/nav.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("1").className="current";
+	};
+	</script>
+	<h1>Projects</h1>
+		
+	<p>A list of my projects</p>
+		<a href="#" id="progBut" class="headList selected" style="color:black; text-decoration:none;"><h2>Programming Projects <i id="progButArrow" class="fa fa-angle-right" aria-hidden="true"></i></h2></a>
+			<div id="progProjects" class="projects">
+				<div class="row">
+					<div class="projectImage" style="cursor:pointer; background-image:url('media/hvz2.png');"></div>
+					<div class="projectImage" style="cursor:pointer; background-image:url('media/openGL.png');"></div>
+					<div class="projectImage" style="cursor:pointer; background-image:url('media/vrMaze.png');"></div>
+					<div class="projectImage" style="cursor:pointer; background-image:url('media/fl.png');"></div>
+
+				</div>
+			</div>
+			
+		<a href="#" id="assetBut" class="headList" style="color:black; text-decoration:none;"><h2>Asset Production Projects <i id="assetButArrow" class="fa fa-angle-down" aria-hidden="true"></i></h2></a>
+			<div id="assetProjects" class="projects" style="display:none">
+				<div class="row">
+					<div class="projectImage" style="cursor:pointer; background-image:url('media/crossbow.gif');"></div>
+
+				</div>
+			</div>
+	<footer>
+		<!--#include virtual="includes/footer.html"-->
+	</footer>
+</div>	
+
+
+</body>
+</html>

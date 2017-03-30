@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>The Portfolio of Matt Dieselman</title>
+	<link rel="stylesheet" href="css/jquery.circular-carousel.css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	
+			<!-- I used scripts for the carousel as well jquery -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="JavaScript/bootstrap.min.js"></script>
+			<script src="JavaScript/jquery.circular-carousel.js"></script>
+			<script src="JavaScript/carousel.js"></script> 
+</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="JavaScript/particles.js"></script>
+<script src="JavaScript/app.js"></script>
+
+
+<!-- General Div For Floating Display-->
+	<div id="floatSection">
+	<!--#include file="includes/nav.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("logo").className="current";
+	};
+	</script>
+		<p id="phone">The carousel is not available on screens smaller than 800px.</p>
+		<h2 style="margin-left:2%;">I'm Matt and I make video games, mods, simulations and much more.</h2>
+		<!--Carousel Section-->
+		<div  id="carousel">
+			<div class="carousel" style="text-align:center;">
+				<ul class="carousel noSelect">
+					<li class="item active"><a href="projects/hvz.shtml"><img style="height:250px; width:350px;" src="media/hvz.png" alt="My Humans vs Zombies Project" /></a></li>
+					<li class="item"><a href="projects/crossbow.shtml"><img style="height:250px; width:350px;" src="media/crossbow.gif" alt="My Crossbow Model" /></a></li>
+					<li class="item"><a href="projects/floorIsLava.shtml"><img style="height:250px; width:350px;" src="media/fl.png" alt="The Floor is Lava" /></a></li>
+
+					<!--<li class="item"><a href="projects/battleship.shtml"><img style="height:250px; width:350px;" src="media/battleship.png" alt="My Battleship Project" /></a></li>-->
+					<li class="item"><a href="projects/openGL.shtml"><img style="height:250px; width:350px;" src="media/openGL.png" alt="openGL Engine" /></a></li>
+					<li class="item"><a href="projects/vrMaze.shtml"><img style="height:250px; width:350px;" src="media/vrMaze.png" alt="Inside the VR Maze" /></a></li>
+
+<!-- 					<li class="item"></li>
+ -->
+				</ul>
+				<div class="controls" style="font-size:100%;">
+					<a href="#" class="previous noSelect">Back</a> 
+					<div>
+					<a href="#" class="next noSelect">Next</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+
+		<footer>
+		<!--#include virtual="includes/footer.html"-->
+		</footer>
+
+	</div>
+
+</body>
+</html>

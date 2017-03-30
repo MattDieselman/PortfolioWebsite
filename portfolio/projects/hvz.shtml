@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Portfolio of Matt Dieselman - HvZ</title>
+	<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="../JavaScript/particles.js"></script>
+<script src="../JavaScript/app.js"></script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include virtual="../includes/nav2.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("1").className="current";
+	};
+	</script>
+	<h1>Humans vs. Zombies</h1>
+	<div class="aboutImg"><img src="../media/hvz.png" alt="Headshot" /></div>
+		<div class="aboutText">
+		<p>This was a class project indended to utilize vector positioning and movement with steering forces. It was developed in Processing (a java based language). You can download the entire project along with its documentation <a href="hvz.zip">HERE</a></p>
+		</div>
+		
+		<div style="clear:both;"></div>
+
+	<footer>
+		<!--#include virtual="../includes/footer.html"-->
+	</footer>
+</div>	
+
+
+</body>
+</html>

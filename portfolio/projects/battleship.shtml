@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Portfolio of Matt Dieselman - Battleship</title>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+		<script type="text/javascript" src="processing.js"></script>
+		<style>
+			#canvas{
+			float:right;
+				margin:auto;
+				font-family:Arial;
+				text-align:center;
+				width:auto%;
+				height:auto;
+				max-width:50%;
+				border: 2px solid black;
+				color:black;
+				font-weight:bold;
+			}
+			#hiddenTillClick{
+			display:none;
+			}
+			
+			#button{
+				display:inline-block;
+				padding:5px;
+				cursor:pointer;
+				width:auto;
+				size:auto;
+				background-color:#617196;
+				color:black;
+			}
+		</style>
+		<script>
+			function toggleDiv(){
+				if(document.getElementById("hiddenTillClick").style.display=='block'){
+					document.getElementById("hiddenTillClick").style.display='none';
+				}
+				else{
+					document.getElementById("hiddenTillClick").style.display='block';
+				}
+			}
+
+		</script>
+	</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="../JavaScript/particles.js"></script>
+<script src="../JavaScript/app.js"></script>
+	<div id="floatSection">	
+	
+	<!-- Navigation Section -->
+		<!--#include virtual="../includes/nav2.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("1").className="current";
+	};
+	</script>
+	
+			<h2>Try downloading the app. It will run and look much better when run as an executable (Text does not display)</h2>
+			<div id="button" onclick="toggleDiv()" >Click Here To Toggle Project Display</div><div> (Having the project open may slow down the browser)</div>
+			<div id="hiddenTillClick"><canvas style="clear" id="canvas" data-processing-sources="battleship.pde Button.pde Board.pde Player.pde"></canvas></div>
+			<div class="aboutText"><p>This was a personal project done in processing to further my own knowledge in 3D drawing. There are several changes I would make to another 3D project, but I was able to teach myself a lot. This project was done in about 12 hours however I still return to make small changes when I can.</p></div>
+			<div style="clear:both;"></div>
+
+			<br /><a href="battleship.zip" download>Download Here</a>
+	<footer>
+		<!--#include virtual="../includes/footer.html"-->
+	</footer>
+		</div>
+
+	</body>
+</html>

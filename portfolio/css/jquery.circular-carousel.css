@@ -1,0 +1,63 @@
+.carousel .item {
+	display: block;
+	position: absolute;
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-o-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.carousel .item.active {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.carousel .item.transition {
+	-webkit-transition: all 0.35s ease;
+	-moz-transition: all 0.35s ease;
+	-o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.carousel {
+	left: 50%;
+	z-index:1;
+	padding:0;
+	width:100%;
+	position: relative;
+	height: 350px;
+	width: 1000px;
+	margin-left: -500px;
+}
+
+.carousel .item {
+	width: 350px;
+	height: 250px;
+	background: url('http://placehold.it/350x250') top left no-repeat;
+	background-size: 100%;
+	vertical-align: top;
+	line-height: 150px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.controls {
+	position: relative;
+/* 	top: 500px;
+ */	left: 50%;
+	width: 150px;
+	margin-left: -75px;
+}
+
+.controls a {
+	display: block;
+}
+
+.controls .previous {
+	float: left;
+}
+
+.controls .next {
+	float: right;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Portfolio of Matt Dieselman - VR Maze</title>
+	<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="particles-js" style="position:absolute;"></div>
+<script src="../JavaScript/particles.js"></script>
+<script src="../JavaScript/app.js"></script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include virtual="../includes/nav2.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("1").className="current";
+	};
+	</script>
+	<h1>VR Maze Game</h1>
+	<div class="aboutImg"><img src="../media/vrMaze.png" alt="Inside the VR Maze" /></div>
+		<div class="aboutText">
+		<p>This is a personal project that myself and a group are working on to bring to market. We are adapting a board game we designed for the VR space. I am mainly responsible for the Maze Generation and some gameplay programming. This can be found on my GitHub page.</p>
+		</div>
+		
+		<div style="clear:both;"></div>
+
+	<footer>
+		<!--#include virtual="../includes/footer.html"-->
+	</footer>
+</div>	
+
+
+</body>
+</html>

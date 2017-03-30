@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Documentation For The Portfolio of Matt Dieselman</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="particles-js" style="position:absolute; width:100%;height:100%; z-index:-10;"></div>
+<script src="JavaScript/particles.js"></script>
+<script src="JavaScript/app.js"></script>
+<!-- General Div For Floating Display-->
+<div id="floatSection">
+	
+	<!-- Navigation Section -->
+		<!--#include file="includes/nav.html"-->
+	<script>
+	window.onload = function(){
+		document.getElementById("5").className="current";
+	};
+	</script>
+	<div class="DocumentationSection">
+	<h1>Documentation</h1>
+	<p>Fonts used:</p>
+	<ul>
+		<li>Droid Sans (https://fonts.googleapis.com/css?family=Droid+Sans)</li>
+		</ul>
+	</div>
+	<p>My 3D processing sketch uses the processing.js library.</p>
+	<p>I used jQuery and a carousel plugin (http://www.jqueryscript.net/slider/3D-Rotating-Carousel-Plugin-with-jQuery-CSS3-Circular-Carousel.html)</p>
+	<p>The animated background over the blue uses Particles.js (https://github.com/VincentGarreau/particles.js/).</p>
+	<p>The IFrame validation errors result from the embedded iframe that I got off of sketchfabs site.</p>
+	<p>My main Above and Beyond is the embedded processing that I have on one of my projects pages as well as the interactive 3D model.</p>
+	<p>Using font awsome for the arrows on experiece.</p>
+	<p>Projects images should open up to a light box (acting as my image gallery).</p>
+	<p>My mailer still does not work because of my php issues.</p>
+	<p>I am using my name (also a link to the home page) as my logo.</p>
+	<p>DHTML is located in my battleship page where the button opens/closes the canvas.</p>
+	<p>Navbar current location should be much more visible now.</p>
+	<h2>Relevent links:</h2>
+	<ul>
+	<li><a href="thisisa404page.html">404 Test Page</a></li>
+	<li><a href="auth/auth.shtml">Auth Test Page</a></li>
+	</ul>
+	<footer>
+		<!--#include virtual="includes/footer.html"-->
+	</footer>
+</div>	
+
+</body>
+</html>
